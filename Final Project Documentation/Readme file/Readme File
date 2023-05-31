@@ -1,0 +1,65 @@
+Here are the step-by-step instructions for creating a AUTOMATED PARALYSIS PATIENT HEALTHCARE
+MONITORING SYSTEM USING IOT with four sensors (flex sensor, accelerometer sensor, spo2 sensor ,and temperature sensor) using the thingsspeak IoT application dashboard:
+
+Step 1: Gather the necessary components
+
+flex sensor
+accelerometer sensor
+spo2 sensor
+temperature sensor
+Step 2: Set up the hardware
+
+Connect the flex sensor to the Raspberry Pi using the appropriate pins (refer to the sensor's datasheet or documentation).
+Connect the accelerometer sensor to the Raspberry Pi using the appropriate pins.
+Connect the spo2 sensor to the Raspberry Pi using the appropriate pins.
+Connect the temperature sensor to the Raspberry Pi using the appropriate pins.
+Mount the sensors securely on the plywood.
+
+
+Step 3: get the thingsspeak.com site
+
+Create a  account or log in if you already have one.
+
+Step 4: Create a new Blynk project
+
+Open the Blynk app and create a new project.
+Choose the appropriate hardware (Raspberry Pi) and connection type (Wi-Fi, Bluetooth, etc.).
+thingsspeak will provide you with an Auth screen, which you'll need later.
+
+
+Step 5: Set up the Arduino IDE
+
+Download and install the Raspberry Pi OS (Integrated Development Environment) on your computer.
+Connect the Raspberry Pi to your computer desktop using a vji to hdmi converter cable.
+Open the python IDE.
+
+
+Step 7: Install required libraries
+
+In the python IDE, 
+Search for and include the necessary libraries for each sensor:
+For the flex sensor, include the "Adafruit_ADS1x15" library.
+For the spo2 sensor, include the "max30100" library.
+For the accelerometer sensor, include the "Adafruit_ADS1x15 and smtplib" library.
+For the temp sensor, include the "MLX90614" library.
+
+
+Step 8: Write the python code
+
+In the python IDE, create a new sketch and write the code to read data from the flex sensor, spo2 sensor,accelerometer sensor, and temp sensor.
+Use the appropriate library functions to communicate with each sensor and retrieve sensor readings.
+Implement the code to send the sensor data to the thingsspeak dashboard .
+Insert the Auth Token obtained in Step 4 into the code.
+Upload the code to the Raspberry Pi.
+
+Step 9: Test the setup
+
+Ensure that the Raspberry Pi is connected to a power source.
+Check if the sensor readings are being displayed correctly on the thingsspeak dashboard.
+Verify that the accelerometer sensor is providing accurate location information.
+
+
+Step 10: Calibrate and adjust settings
+
+Fine-tune the sensor readings by calibrating each sensor if necessary.
+Adjust the thingsspeak dashboard settings and thresholds based on your requirements.
